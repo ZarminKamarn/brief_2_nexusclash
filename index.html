@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-    
+    <link rel="stylesheet" href="./style.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
@@ -18,13 +19,12 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header>
-        <div>
-            <img src="./image/logo.svg" alt="Logo du Nexus Clash">
-            <h1>Nexus Clash</h1>
+    <header class="container">
+        <div class="">
+            <img src="./image/logo.svg" alt="Logo du Nexus Clash" class="col-1">
+            <h1 class="col-3 fs-2 align-items-center">Nexus Clash</h1>
         </div>
-        <p>Menu Burger</p>
-        <nav>
+        <nav class="">
             <ul>
                 <li>Accueil</li>
                 <li>Tournois</li>
@@ -32,70 +32,80 @@
             </ul>
         </nav>
     </header>
-    <main>
-        <section class="hero-banner">
-            <div>
+    <main class="container-fluid">
+        <section class="hero-banner container p-5 d-flex align-items-end">
+            <div class="row w-25 justify-content-center align-content-center bg-black">
                 <p>Bienvenue sur Nexus Clash, le coeur battant de l'esport</p>
             </div>
         </section>
-        <section>
+        <section class="container text-center">
             <h2>Qu'est-ce que Nexus Clash ?</h2>
             <p>Nexus Clash est un tournoi d'esport compétitif qui réunit les meilleurs joueurs autour de jeux vidéos populaires. Chaque année, des équipes passionnées s'affrontent dans des matchs intenses où stratégie, rapidité et esprit d'équipe sont essentiels pour décrocher la victoire. Que vous soyez un joueur confirmé ou un simple spectateur, Nexus Clash offre une expérience immersive et spectaculaire, mettant en lumière le talent et la créativité de la scène gaming. Rejoignez-nous pour vivre l'adrénaline des compétitions et soutenir vos champions préférés !</p>
         </section>
-        <section>
-            <h2>Prochaine édition</h2>
-            <ul>
-                <li>
-                    <img src="./image/money.jpg" alt="">
+        <section class="container-fluid">
+            <div class="row ps-5">
+                <h2>Prochaine édition</h2>
+            </div>
+            <ul class="row justify-content-center gap-4 list-unstyled px-5">
+                <li class="col-2 bg-primary rounded-2 shadow">
+                    <img src="./image/money.jpg" alt="" class="img-fluid">
                     <p>5 000€ de cashback</p>
                 </li>
-                <li>
-                    <img src="./image/jeux.png" alt="">
+                <li class="col-2 bg-primary rounded-2 shadow">
+                    <img src="./image/jeux.png" alt="" class="img-fluid">
                     <p>16 jeux sélectionnés</p>
                 </li>
-                <li>
-                    <img src="./image/gamer.jpg" alt="">
+                <li class="col-2 bg-primary rounded-2 shadow">
+                    <img src="./image/gamer.jpg" alt="" class="img-fluid">
                     <p>128 joueurs participants</p>
                 </li>
-                <li>
-                    <img src="./image/spectateurs.jpg" alt="">
+                <li class="col-2 bg-primary rounded-2 shadow">
+                    <img src="./image/spectateurs.jpg" alt="" class="img-fluid">
                     <p>50 000 spectateurs</p>
                 </li>
-                <li>
-                    <img src="./image/arene.jpg" alt="">
+                <li class="col-2 bg-primary rounded-2 shadow">
+                    <img src="./image/arene.jpg" alt="" class="img-fluid">
                     <p>1 salle 4 arène</p>
                 </li>
             </ul>
         </section>
-        <section>
-            <h2>Participer à Nexus Clash</h2>
-            <form>
-                <div>
+        <section class="container w-50 px-4">
+            <div class="row">
+                <h2>Participer à Nexus Clash</h2>
+            </div>
+            <form class="row justify-content-evenly">
+                <div class="col-5">
                     <label>Prénom</label>
                     <input type="text">
+                </div>
+                <div class="col-5">
                     <label>Nom de famille</label>
                     <input type="text">
+                </div>
+                <div class="col-5">
                     <label>Pseudonyme</label>
                     <input type="text">
+                </div>
+                <div class="col-5">
                     <label>Adresse e-mail</label>
                     <input type="email">
                 </div>
-                <div>
+                <div class="col-10 d-flex gap-2">
                     <input type="checkbox">
                     <label>J'accepte que mes données soient enregistrées, conformément à la <a href="#">politique de confidentialité</a></label>
                 </div>
-                <button class="btn btn-primary">Participer</button>
+                <button class="btn btn-primary col-10">Participer</button>
             </form>
         </section>
     </main>
-    <footer>
-        <div>
-            <img src="./image/logo.svg" alt="Logo du Nexus Clash">
-            <h3>Nexus Clash</h3> <!-- Changer le titre -->
+    <footer class="container-fluid">
+        <div class="row justify-content-center gap-1">
+            <img src="./image/logo.svg" alt="Logo du Nexus Clash" class="col-1">
+            <h3 class="col-md-auto">Nexus Clash</h3> <!-- Changer le titre -->
         </div>
-        <div>
-            <a href="">Mentions légales</a>
-            <a href="">Politique de confidentialité</a>
+        <div class="row justify-content-center gap-3">
+            <a href="" class="col-md-auto">Mentions légales</a>
+            <a href="" class="col-md-auto">Politique de confidentialité</a>
         </div>
     </footer>
 </body>
