@@ -1,0 +1,105 @@
+:root {
+  --primary: #4A148C;
+  --secondary: #7C4DFF;
+  --tertiary: #FFEB3B;
+  --dark: #121212;
+  --light: #E0E0E0;
+  --main-title-police: "Orbitron";
+  --other-title-police: "Montserrat";
+  --text-police: "Roboto";
+}
+
+.header, .footer{
+    background-color: var(--primary);
+}
+
+.logo{
+    width: 45px;
+}
+
+.main{
+    background-color: var(--light);
+}
+
+.form{
+    border-color: var(--primary) !important;
+    background-color: var(--tertiary);
+}
+
+.hero-banner{
+    height: 300px;
+    background-image: url('./image/banner_1920.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.image-container{
+    height: 128px;
+}
+
+.card-tournoi{
+    width: 170px;
+    height: 225px;
+    background-color: var(--secondary);
+    box-shadow: 10px 10px 4px 5px rgba(from var(--dark) r g b / 25%);
+}
+
+.text-card{
+    color: var(--light);
+    font-family: var(--text-police);
+}
+
+.main-title{
+    color: var(--light);
+    font-family: var(--main-title-police);
+    letter-spacing: 10%;
+}
+
+.text-header{
+    color: var(--light);
+    font-family: var(--other-title-police);
+}
+
+.text-footer{
+    color: var(--light);
+    font-family: var(--text-police);
+}
+
+.btn-participer{
+    background-color: var(--secondary);
+    border-color: var(--tertiary) !important;
+    color: #FFFFFF;
+}
+
+.section-title{
+    font-family: var(--other-title-police);
+    color: var(--dark);
+}
+
+.glass-title{
+    font-family: var(--other-title-police);
+    color: var(--light);
+    background: rgba(from var(--dark) r g b / 40%);
+    backdrop-filter: blur(5px);
+}
+
+.text-form, .content-text{
+    color: var(--dark);
+    font-family: var(--text-police);
+}
+
+@media screen and (min-width: 992px) {
+    .hero-banner{
+        height: 500px;
+    }
+
+    .card-tournoi{
+        width: 200px;
+        height: 260px;
+    }
+
+    .image-container{
+        height: 150px;
+    }
+}
