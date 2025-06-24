@@ -103,3 +103,27 @@
         height: 150px;
     }
 }
+
+@media (prefers-color-scheme: dark){
+    .form{
+        border-color: var(--tertiary) !important;
+        background-color: var(--primary);
+    }
+
+    .main{
+        background-color: var(--dark);
+    }
+
+    .card-tournoi{
+        background-color: var(--primary);
+        box-shadow: 10px 10px 4px 5px rgba(from var(--tertiary) r g b / 25%);
+    }
+
+    .section-title{
+        color: var(--light);
+    }
+
+    .text-form, .content-text{
+        color: var(--light);
+    }
+}
