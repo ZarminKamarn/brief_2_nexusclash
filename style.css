@@ -1,139 +1,168 @@
 :root {
-  --primary: #4A148C;
-  --secondary: #7C4DFF;
-  --tertiary: #FFEB3B;
+  --primary: #4a148c;
+  --secondary: #7c4dff;
+  --tertiary: #ffeb3b;
   --dark: #121212;
-  --light: #E0E0E0;
+  --light: #e0e0e0;
   --main-title-police: "Orbitron";
   --other-title-police: "Montserrat";
   --text-police: "Roboto";
 }
 
-.header, .footer{
-    background-color: var(--primary);
+.header,
+.footer {
+  background-color: var(--primary);
 }
 
-.logo{
-    width: 45px;
+.logo {
+  width: 45px;
 }
 
-.main{
-    background-color: var(--light);
+.main-title {
+  color: var(--light);
+  font-family: var(--main-title-police);
+  letter-spacing: 3px;
 }
 
-.form{
-    border-color: var(--primary) !important;
-    background-color: var(--tertiary);
+.text-header {
+  color: var(--light);
+  font-family: var(--other-title-police);
 }
 
-.hero-banner{
-    height: 300px;
-    background-image: url('./image/banner_1920.webp');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
+.text-header:hover {
+  text-decoration: underline;
 }
 
-.image-container{
-    height: 128px;
+.main {
+  background-color: var(--light);
 }
 
-.card-tournoi{
-    width: 170px;
-    height: 225px;
-    background-color: var(--secondary);
-    box-shadow: 10px 10px 4px 5px rgba(from var(--dark) r g b / 25%);
+.section-title {
+  font-family: var(--other-title-police);
+  color: var(--dark);
 }
 
-.text-card{
-    color: var(--light);
-    font-family: var(--text-police);
+.hero-banner {
+  height: 300px;
+  background-image: url("./image/banner_1920.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
-.main-title{
-    color: var(--light);
-    font-family: var(--main-title-police);
-    letter-spacing: 10%;
+.glass-title {
+  font-family: var(--other-title-police);
+  color: var(--light);
+  background: rgba(18, 18, 18, 40%);
+  backdrop-filter: blur(5px);
 }
 
-.text-header{
-    color: var(--light);
-    font-family: var(--other-title-police);
+.card-tournoi {
+  width: 170px;
+  height: 225px;
+  background-color: var(--secondary);
+  box-shadow: 10px 10px 4px 5px rgba(18, 18, 18, 25%);
 }
 
-.text-header:hover{
-    text-decoration: underline;
+.image-container {
+  height: 128px;
 }
 
-.text-footer{
-    color: var(--light);
-    font-family: var(--text-police);
+.text-card {
+  color: #ffffff;
+  font-family: var(--text-police);
 }
 
-.btn-participer{
-    background-color: var(--secondary);
-    border-color: var(--tertiary) !important;
-    color: #FFFFFF;
+.form {
+  border-color: var(--primary) !important;
+  background-color: var(--tertiary);
 }
 
-.btn-participer:hover{
-    background-color: var(--secondary);
-    color: #FFFFFF;
-    box-shadow: 0 0 0 4px var(--tertiary);
+.text-form,
+.content-text {
+  color: var(--dark);
+  font-family: var(--text-police);
 }
 
-.section-title{
-    font-family: var(--other-title-police);
-    color: var(--dark);
+.btn-participer {
+  background-color: var(--secondary);
+  border-color: var(--tertiary) !important;
+  color: #ffffff;
 }
 
-.glass-title{
-    font-family: var(--other-title-police);
-    color: var(--light);
-    background: rgba(from var(--dark) r g b / 40%);
-    backdrop-filter: blur(5px);
+.btn-participer:hover {
+  background-color: var(--secondary);
+  color: #ffffff;
+  box-shadow: 0 0 0 4px var(--tertiary);
 }
 
-.text-form, .content-text{
-    color: var(--dark);
-    font-family: var(--text-police);
+.btn-participer:disabled {
+  background-color: var(--dark);
+  color: var(--light);
+  border-color: var(--secondary) !important;
+}
+
+#send-participation{
+  border-color: var(--primary) !important;
+}
+
+#send-participation:hover {
+  box-shadow: 0 0 0 4px var(--primary);
+}
+
+.text-footer {
+  color: var(--light);
+  font-family: var(--text-police);
 }
 
 @media screen and (min-width: 992px) {
-    .hero-banner{
-        height: 500px;
-    }
+  .hero-banner {
+    height: 500px;
+  }
 
-    .card-tournoi{
-        width: 200px;
-        height: 260px;
-    }
+  .card-tournoi {
+    width: 200px;
+    height: 260px;
+  }
 
-    .image-container{
-        height: 150px;
-    }
+  .image-container {
+    height: 150px;
+  }
 }
 
-@media (prefers-color-scheme: dark){
-    .form{
-        border-color: var(--tertiary) !important;
-        background-color: var(--primary);
-    }
+@media (prefers-color-scheme: dark) {
+  .main {
+    background-color: var(--dark);
+  }
 
-    .main{
-        background-color: var(--dark);
-    }
+  .section-title {
+    color: var(--light);
+  }
 
-    .card-tournoi{
-        background-color: var(--primary);
-        box-shadow: 10px 10px 4px 5px rgba(from var(--tertiary) r g b / 25%);
-    }
+  .card-tournoi {
+    background-color: var(--primary);
+    box-shadow: 10px 10px 4px 5px rgba(255, 235, 59, 25%);
+  }
 
-    .section-title{
-        color: var(--light);
-    }
+  .text-card {
+    color: var(--light);
+  }
 
-    .text-form, .content-text{
-        color: var(--light);
-    }
+  .form {
+    border-color: var(--tertiary) !important;
+    background-color: var(--primary);
+  }
+
+  .text-form,
+  .content-text {
+    color: var(--light);
+  }
+
+  #send-participation{
+    border-color: var(--tertiary) !important;
+  }
+
+  #send-participation:hover {
+    box-shadow: 0 0 0 4px var(--tertiary);
+  }
 }

@@ -1,122 +1,245 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-    <link rel="stylesheet" href="./style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    
-    <link rel="shortcut icon" href="./image/logo.svg">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="shortcut icon" href="./image/logo.svg" />
     <title>Nexus Clash</title>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
-</head>
-<body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
     <header class="px-2 py-5 py-lg-2 header">
-        <nav class="navbar navbar-expand-lg d-flex flex-row justify-content-around" data-bs-theme="dark">
-            <div class="d-flex flex-row align-items-center gap-2">
-                <img src="./image/logo.svg" alt="Logo du Nexus Clash" class="logo">
-                <p class="main-title fw-semibold fs-2 m-0">Nexus Clash</p>
-            </div>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div id="navbarNavAltMarkup" class="collapse navbar-collapse flex-grow-0">
-                <ul class="navbar-nav justify-content-center align-items-center">
-                    <li><a class="nav-link text-header fs-2" href="#section-accueil">Accueil</a></li>
-                    <li><a class="nav-link text-header fs-2" href="#section-tournois">Tournois</a></li>
-                    <li><a class="btn btn-participer border border-3 p-1 fs-2" href="#section-participer">Participer</a></li>
-                </ul>
-            </div>
-        </nav>
+      <nav
+        class="navbar navbar-expand-lg d-flex flex-row justify-content-around"
+        data-bs-theme="dark"
+      >
+        <div class="d-flex flex-row align-items-center gap-2">
+          <img src="./image/logo.svg" alt="Logo du Nexus Clash" class="logo" />
+          <p class="main-title fw-semibold fs-2 m-0">Nexus Clash</p>
+        </div>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          id="navbarNavAltMarkup"
+          class="collapse navbar-collapse flex-grow-0"
+        >
+          <ul class="navbar-nav justify-content-center align-items-center">
+            <li>
+              <a class="nav-link text-header fs-2" href="#section-accueil"
+                >Accueil</a
+              >
+            </li>
+            <li>
+              <a class="nav-link text-header fs-2" href="#section-tournois"
+                >Tournois</a
+              >
+            </li>
+            <li>
+              <a
+                class="btn btn-participer border border-3 p-1 fs-2"
+                href="#section-participer"
+                >Participer</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
     </header>
     <main class="d-flex flex-column pb-5 align-items-center main">
-        <section class="hero-banner d-flex w-100 align-items-end p-4 mb-5">
-            <h2 class="glass-title col-lg-4 col-8 p-3">Bienvenue sur Nexus Clash, le coeur battant de l'esport</h2>
-        </section>
-        <section class="d-flex flex-column align-items-center m-4 my-5 text-center gap-3 col-lg-5" id="section-accueil">
-            <h2 class="section-title">Qu'est-ce que Nexus Clash ?</h2>
-            <p class="content-text">Nexus Clash est un tournoi d'esport compétitif qui réunit les meilleurs joueurs autour de jeux vidéos populaires. Chaque année, des équipes passionnées s'affrontent dans des matchs intenses où stratégie, rapidité et esprit d'équipe sont essentiels pour décrocher la victoire. Que vous soyez un joueur confirmé ou un simple spectateur, Nexus Clash offre une expérience immersive et spectaculaire, mettant en lumière le talent et la créativité de la scène gaming. Rejoignez-nous pour vivre l'adrénaline des compétitions et soutenir vos champions préférés !</p>
-        </section>
-        <section class="d-flex flex-column gap-3 col-11 col-lg-9 my-5" id="section-tournois">
-            <h2 class="section-title">Prochaine édition</h2>
-            <ul class="d-flex flex-column flex-lg-row justify-content-between align-items-center gap-4">
-                <li class="card card-tournoi overflow-hidden">
-                    <div class="image-container w-100 d-flex justify-content-center">
-                        <img src="./image/money.jpg" alt="" class="h-100">
-                    </div>
-                    <p class="text-card m-0 h-100 w-100 d-flex justify-content-center align-items-center text-center">5 000€ de cashback</p>
-                </li>
-                <li class="card card-tournoi overflow-hidden">
-                    <div class="image-container w-100 d-flex justify-content-center">
-                        <img src="./image/jeux.png" alt="" class="h-100">
-                    </div>
-                    <p class="text-card m-0 h-100 w-100 d-flex justify-content-center align-items-center text-center">16 jeux sélectionnés</p>
-                </li>
-                <li class="card card-tournoi overflow-hidden">
-                    <div class="image-container w-100 d-flex justify-content-center">
-                        <img src="./image/gamer.jpg" alt="" class="h-100">
-                    </div>
-                    <p class="text-card m-0 h-100 w-100 d-flex justify-content-center align-items-center text-center">128 joueurs participants</p>
-                </li>
-                <li class="card card-tournoi overflow-hidden">
-                    <div class="image-container w-100 d-flex justify-content-center">
-                        <img src="./image/spectateurs.jpg" alt="" class="h-100">
-                    </div>
-                    <p class="text-card m-0 h-100 w-100 d-flex justify-content-center align-items-center text-center">50 000 spectateurs</p>
-                </li>
-                <li class="card card-tournoi overflow-hidden">
-                    <div class="image-container w-100 d-flex justify-content-center">
-                        <img src="./image/arene.jpg" alt="" class="h-100">
-                    </div>
-                    <p class="text-card m-0 h-100 w-100 d-flex justify-content-center align-items-center text-center">1 salle 4 arènes</p>
-                </li>
-            </ul>
-        </section>
-        <section class="d-flex flex-column m-4 my-5 p-5 gap-4 col-lg-7 border border-5 form" id="section-participer">
-            <h2 class="section-title text-form">Participer à Nexus Clash</h2>
-            <form class="d-flex flex-column flex-lg-row flex-lg-wrap justify-content-between gap-4">
-                <div class="d-flex flex-column col-lg-5">
-                    <label class="text-form" for="name-form">Prénom</label>
-                    <input type="text" id="name-form">
-                </div>
-                <div class="d-flex flex-column col-lg-5">
-                    <label class="text-form" for="family-name-form">Nom de famille</label>
-                    <input type="text" id="family-name-form">
-                </div>
-                <div class="d-flex flex-column col-lg-5">
-                    <label class="text-form" for="username-form">Pseudonyme</label>
-                    <input type="text" id="username-form">
-                </div>
-                <div class="d-flex flex-column col-lg-5">
-                    <label class="text-form" for="mail-form">Adresse e-mail</label>
-                    <input type="email" id="mail-form">
-                </div>
-                <div class="d-flex flex-row gap-2">
-                    <input type="checkbox" id="register-data-form">
-                    <label class="text-form" for="register-data-form">J'accepte que mes données soient enregistrées, conformément à la <a class="text-form" href="#">politique de confidentialité</a></label>
-                </div>
-                <button class="btn btn-participer border border-3 w-100 p-1 fs-2" type="button" id="send-participation">Participer</button>
-            </form>
-        </section>
+      <section class="hero-banner d-flex w-100 align-items-end p-4 mb-5">
+        <h1 class="glass-title col-lg-4 col-8 p-3 fs-2">
+          Bienvenue sur Nexus Clash, le coeur battant de l'esport
+        </h1>
+      </section>
+      <section
+        class="d-flex flex-column align-items-center m-4 my-5 text-center gap-3 col-lg-5"
+        id="section-accueil"
+      >
+        <h2 class="section-title">Qu'est-ce que Nexus Clash ?</h2>
+        <p class="content-text">
+          Nexus Clash est un tournoi d'esport compétitif qui réunit les
+          meilleurs joueurs autour de jeux vidéos populaires. Chaque année, des
+          équipes passionnées s'affrontent dans des matchs intenses où
+          stratégie, rapidité et esprit d'équipe sont essentiels pour décrocher
+          la victoire. Que vous soyez un joueur confirmé ou un simple
+          spectateur, Nexus Clash offre une expérience immersive et
+          spectaculaire, mettant en lumière le talent et la créativité de la
+          scène gaming. Rejoignez-nous pour vivre l'adrénaline des compétitions
+          et soutenir vos champions préférés !
+        </p>
+      </section>
+      <section
+        class="d-flex flex-column gap-3 col-11 col-lg-9 my-5"
+        id="section-tournois"
+      >
+        <h2 class="section-title">Prochaine édition</h2>
+        <ul
+          class="d-flex flex-column flex-lg-row justify-content-between align-items-center gap-4 p-0"
+        >
+          <li class="card card-tournoi overflow-hidden">
+            <div class="image-container w-100 d-flex justify-content-center">
+              <img
+                src="./image/money.jpg"
+                alt="Piles de billets"
+                class="h-100"
+              />
+            </div>
+            <p
+              class="text-card m-0 h-100 w-100 d-flex justify-content-center align-items-center text-center"
+            >
+              5 000€ de cashback
+            </p>
+          </li>
+          <li class="card card-tournoi overflow-hidden">
+            <div class="image-container w-100 d-flex justify-content-center">
+              <img
+                src="./image/jeux.png"
+                alt="Illustrations de jeux vidéo emblématiques"
+                class="h-100"
+              />
+            </div>
+            <p
+              class="text-card m-0 h-100 w-100 d-flex justify-content-center align-items-center text-center"
+            >
+              16 jeux sélectionnés
+            </p>
+          </li>
+          <li class="card card-tournoi overflow-hidden">
+            <div class="image-container w-100 d-flex justify-content-center">
+              <img
+                src="./image/gamer.jpg"
+                alt="Joueur assis face à un écran de gaming"
+                class="h-100"
+              />
+            </div>
+            <p
+              class="text-card m-0 h-100 w-100 d-flex justify-content-center align-items-center text-center"
+            >
+              128 joueurs participants
+            </p>
+          </li>
+          <li class="card card-tournoi overflow-hidden">
+            <div class="image-container w-100 d-flex justify-content-center">
+              <img
+                src="./image/spectateurs.jpg"
+                alt="Grande salle de spectacle remplie de spectateurs"
+                class="h-100"
+              />
+            </div>
+            <p
+              class="text-card m-0 h-100 w-100 d-flex justify-content-center align-items-center text-center"
+            >
+              50 000 spectateurs
+            </p>
+          </li>
+          <li class="card card-tournoi overflow-hidden">
+            <div class="image-container w-100 d-flex justify-content-center">
+              <img
+                src="./image/arene.jpg"
+                alt="Vue d'une salle d’e-sport moderne"
+                class="h-100"
+              />
+            </div>
+            <p
+              class="text-card m-0 h-100 w-100 d-flex justify-content-center align-items-center text-center"
+            >
+              1 salle 4 arènes
+            </p>
+          </li>
+        </ul>
+      </section>
+      <section
+        class="d-flex flex-column m-4 my-5 p-5 gap-4 col-lg-7 border border-5 form"
+        id="section-participer"
+      >
+        <h2 class="section-title text-form">Participer à Nexus Clash</h2>
+        <form
+          class="d-flex flex-column flex-lg-row flex-lg-wrap justify-content-between gap-4"
+        >
+          <div class="d-flex flex-column col-lg-5">
+            <label class="text-form" for="name-form">Prénom</label>
+            <input type="text" id="name-form" />
+          </div>
+          <div class="d-flex flex-column col-lg-5">
+            <label class="text-form" for="family-name-form"
+              >Nom de famille</label
+            >
+            <input type="text" id="family-name-form" />
+          </div>
+          <div class="d-flex flex-column col-lg-5">
+            <label class="text-form" for="username-form">Pseudonyme</label>
+            <input type="text" id="username-form" />
+          </div>
+          <div class="d-flex flex-column col-lg-5">
+            <label class="text-form" for="mail-form">Adresse e-mail</label>
+            <input type="email" id="mail-form" />
+          </div>
+          <div class="d-flex flex-row gap-2">
+            <input type="checkbox" id="register-data-form" />
+            <label class="text-form" for="register-data-form"
+              >J'accepte que mes données soient enregistrées, conformément à la
+              <a class="text-form" href="#"
+                >politique de confidentialité</a
+              ></label
+            >
+          </div>
+          <button
+            class="btn btn-participer border border-3 w-100 p-1 fs-2"
+            type="button"
+            id="send-participation"
+          >
+            Participer
+          </button>
+        </form>
+      </section>
     </main>
     <footer class="d-flex flex-column gap-3 align-items-center p-5 footer">
-        <div class="d-flex flex-row gap-2 align-items-center">
-            <img src="./image/logo.svg" alt="Logo du Nexus Clash" class="logo">
-            <p class="main-title fw-semibold fs-2 m-0">Nexus Clash</p> <!-- Changer le titre -->
-        </div>
-        <div class="d-flex flex-column flex-lg-row gap-3 justify-content-center align-items-center">
-            <a href="#" class="text-header">Mentions légales</a>
-            <a href="#" class="text-header">Politique de confidentialité</a>
-        </div>
+      <div class="d-flex flex-row gap-2 align-items-center">
+        <img src="./image/logo.svg" alt="Logo du Nexus Clash" class="logo" />
+        <p class="main-title fw-semibold fs-2 m-0">Nexus Clash</p>
+      </div>
+      <div
+        class="d-flex flex-column flex-lg-row gap-3 justify-content-center align-items-center"
+      >
+        <a href="#" class="text-header">Mentions légales</a>
+        <a href="#" class="text-header">Politique de confidentialité</a>
+      </div>
     </footer>
     <script src="./src/main.js"></script>
-</body>
+  </body>
 </html>
