@@ -102,11 +102,11 @@
   border-color: var(--secondary) !important;
 }
 
-#send-participation{
+.send-participation{
   border-color: var(--primary) !important;
 }
 
-#send-participation:hover {
+.send-participation:hover {
   box-shadow: 0 0 0 4px var(--primary);
 }
 
@@ -158,11 +158,11 @@
     color: var(--light);
   }
 
-  #send-participation{
+  .send-participation{
     border-color: var(--tertiary) !important;
   }
 
-  #send-participation:hover {
+  .send-participation:hover {
     box-shadow: 0 0 0 4px var(--tertiary);
   }
 }
